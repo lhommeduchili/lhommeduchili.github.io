@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Begin Jekyll SEO tag v2.7.1 -->
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="blog" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="This how I currently keep myself updated in the ever growing world of Python." />
+<meta property="og:description" content="This how I currently keep myself updated in the ever growing world of Python." />
+<link rel="canonical" href="http://localhost:4000/2020/10/22/upgrading-python.html" />
+<meta property="og:url" content="http://localhost:4000/2020/10/22/upgrading-python.html" />
+<meta property="og:site_name" content="SC" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-10-22T00:00:00-03:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="blog" />
+<script type="application/ld+json">
+{"description":"This how I currently keep myself updated in the ever growing world of Python.","dateModified":"2020-10-22T00:00:00-03:00","datePublished":"2020-10-22T00:00:00-03:00","headline":"blog","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2020/10/22/upgrading-python.html"},"url":"http://localhost:4000/2020/10/22/upgrading-python.html","@type":"BlogPosting","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+<head>
+  <link rel="shortcut icon" href="/assets/favicon/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+  <link rel="alternate" type="application/rss+xml"  href="http://localhost:4000/feed.xml" title="SC">
+  <title>SC · blog </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1,
+                                 maximum-scale=1, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+  <meta name="HandheldFriendly" content="true">
+  
+  <!-- The following snippets (script) are used for integrating MathJax (LaTeX) -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+
+  <!--  Google font Roboto -->
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel="stylesheet">
+
+  <!--  Use external CSS stylesheet -->
+  <link rel="stylesheet" type="text/css" href=/assets/main.css>
+</head>
+
+  <body>
+    <!-- Here starts the wrapper of the grid of fixed elements in the front -->
+    <div id="wrapper_front">
+      <div id="sinsciencia_header">
+        <h1> SINSCIENCIA </h1>
+      </div>
+      <div class="menu">
+        <nav>
+  <ul>
+    
+      <li>
+        <a href="/" >
+          home
+        </a>
+      </li>
+    
+      <li>
+        <a href="/projects/" >
+          projects
+        </a>
+      </li>
+    
+      <li>
+        <a href="/about/" >
+          about
+        </a>
+      </li>
+    
+      <li>
+        <a href="/contact/" >
+          contact
+        </a>
+      </li>
+    
+  </ul>
+</nav>
+
+      </div>
+    </div>
+    <!-- Here starts the wrapper of the grid of static elements in the back -->
+    <div id="wrapper_back">
+      <div id="chinese_header">
+        <h2> 南波的 blog</h2>
+      </div>
+      <div id="main_content">
+        <div class="txt_container">
+  <h1 class="spacing" style="text-align: center">Upgrading python version</h1>
+  <div class="blog-post spacing">
+    <p class="summary" style="color: #666666; text-align: right;"><span class="date">2020年10月22日</span></p>
+    <p>This how I currently keep myself updated in the ever growing world of Python.</p>
+
+<p>To manage multiple python versions I use pyenv:</p>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  pyenv <span class="nb">install</span> <span class="nt">--list</span>
+  pyenv <span class="nb">install </span>VERSION
+</code></pre></div></div>
+
+<p>(e.g. <code class="language-plaintext highlighter-rouge">pyenv install 3.9.0</code>)</p>
+
+<p>Then, to change the global python version use:</p>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  pyenv global VERSION
+</code></pre></div></div>
+<p>(e.g. <code class="language-plaintext highlighter-rouge">pyenv global 3.9.0</code>)</p>
+
+<p>These are the libraries I normally use at the present time, and I use <code class="language-plaintext highlighter-rouge">pip</code> to manage them:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  pip <span class="nb">install </span>numpy matplotlib pandas
+              opencv-python jupyterlab scipy
+              scikit-learn scikit-image seaborn
+</code></pre></div></div>
+
+<hr />
+<p><em>Note for myself:</em></p>
+
+<p><em>If installing python for the first time, remember to add <strong>.pyenv/bin</strong> directory to <code class="language-plaintext highlighter-rouge">$PATH</code> and <strong>pyenv init</strong> to the shell configuration as well.</em></p>
+
+<hr />
+
+<h2 id="checking-compatibility-with-jupyter">Checking compatibility with Jupyter</h2>
+
+<p>Now, in order to use the latest version of python’s kernel in jupyter, I have to modify <code class="language-plaintext highlighter-rouge">alfre/Library/Jupyter/kernels/python3/kernel.json</code>, specifying the version of python that I’m actually using.</p>
+
+<p>To check which version of python jupyter is actually using, open a console inside jupyter’s environment and type:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="kn">import</span> <span class="nn">sys</span>
+  <span class="k">print</span><span class="p">(</span><span class="n">sys</span><span class="p">.</span><span class="n">version</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h2 id="uninstalling-old-versions">Uninstalling old versions</h2>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  pyenv uninstall VERSION
+</code></pre></div></div>
+
+<p>(e.g. <code class="language-plaintext highlighter-rouge">pyenv uninstall 3.8.5</code>)</p>
+
+  </div>
+</div>
+
+        
+          <div class="backhome_container">
+            <a href="/">[back to home]</a>
+          </div>
+        
+      </div>
+      <div id="footer">
+        <p class="poppetje">&#x1F331;</p>
+      </div>
+    </div>
+  </body>
+</html>

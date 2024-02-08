@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include header.html %}
+  <body>
+    <!-- Here starts the wrapper of the grid of fixed elements in the front -->
+    <div id="wrapper_front">
+      <div id="sinsciencia_header">
+        <h1> SINSCIENCIA </h1>
+      </div>
+      <div class="menu">
+        {% include navigation.html %}
+      </div>
+    </div>
+    <!-- Here starts the wrapper of the grid of static elements in the back -->
+    <div id="wrapper_back">
+      <div id="chinese_header">
+        <h2> 南波的 {{ page.title }}</h2>
+      </div>
+      <div id="main_content">
+        {{ content }}
+        {% if page.url != "/" %}
+          <div class="backhome_container">
+            <a href="/">[back to home]</a>
+          </div>
+        {% endif %}
+      </div>
+      <div id="footer">
+        <p class="poppetje">&#x1F331;</p>
+      </div>
+    </div>
+  </body>
+</html>

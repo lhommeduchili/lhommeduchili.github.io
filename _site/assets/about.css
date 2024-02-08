@@ -1,0 +1,20 @@
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+
+.about_img_container {
+  position: relative;
+  width: 100vw;
+  max-width: 960px;
+  margin: auto;
+  overflow-x: auto;
+  overflow-y: visible;
+}
+
+.about_img_container img {
+  width: 960px;
+  height: 640px;
+  cursor: pointer;
+}

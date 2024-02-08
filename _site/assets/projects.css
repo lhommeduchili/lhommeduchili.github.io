@@ -1,0 +1,9 @@
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+.centered_img {
+  margin: 0 auto;
+  display: block;
+}

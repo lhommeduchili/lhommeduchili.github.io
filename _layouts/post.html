@@ -1,0 +1,10 @@
+---
+layout: default
+---
+<div class="txt_container">
+  <h1 class="spacing" style="text-align: center">{{ page.post_title }}</h1>
+  <div class="blog-post spacing">
+    <p class="summary" style="color: #666666; text-align: right;">{{ page.category }}<span class="date">{{ page.date | date: "%Y年%m月%d日" }}</span></p>
+    {{ content }}
+  </div>
+</div>

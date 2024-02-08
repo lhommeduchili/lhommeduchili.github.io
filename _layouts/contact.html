@@ -1,0 +1,17 @@
+---
+layout: default
+---
+<head>
+  <link rel="stylesheet" type="text/css" href={{ "/assets/contact.css" | relative_url }}>
+</head>
+
+<div class="txt_container">
+  {{ content }}
+</div>
+
+<form method="post" action="https://formspree.io/meqpjvej">
+  <input name="name" type="text" class="feedback-input" placeholder="name" required />
+  <input name="email" type="email" class="feedback-input" placeholder="email" required />
+  <textarea name="text" class="feedback-input" placeholder="comment" required></textarea>
+  <input type="submit" value="SUBMIT" />
+</form>
