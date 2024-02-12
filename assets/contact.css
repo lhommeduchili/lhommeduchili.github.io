@@ -14,11 +14,12 @@ form {
 .feedback-input {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   font-size: inherit;
+  color: #ccc;
   font-weight:500;
   border-radius: 5px;
   line-height: 23px;
   background-color: transparent;
-  border: 2px solid #5c8a56;
+  border: 2px solid #cccc99;
   transition: all 0.3s;
   padding: 13px;
   margin-bottom: 15px;
@@ -26,7 +27,7 @@ form {
   outline:0;
 }
 
-.feedback-input:focus { border:2px solid #93cf6d; }
+.feedback-input:focus { border:2px solid #99cccc; }
 
 textarea {
   height: 150px;
@@ -37,11 +38,11 @@ textarea {
 [type="submit"] {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   width: 100%;
-  background: #5c8a56;
+  background: #cccc99;
   border-radius: 5px;
   border: none;
   cursor: pointer;
-  color: #fff;
+  color: #000;
   font-size: 24px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -50,16 +51,16 @@ textarea {
   font-weight: 700;
 }
 
-[type="submit"]:hover { background:#93cf6d; }
+[type="submit"]:hover { background:#99cccc; }
 
 input:invalid, textarea:invalid {
-    border-color: #5c8a56;
+    border-color: #cccc99;
     -webkit-box-shadow: none;
     box-shadow: none;
 }
 
 input:focus:invalid, textarea:focus:invalid{
-    border-color: #93cf6d !important;
+    border-color: #99cccc !important;
   }
 
 /* Correcting [back to home] max width */

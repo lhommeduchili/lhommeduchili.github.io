@@ -53,7 +53,7 @@ Our vision is deeply motivated by the idea of making science accessible for ever
 
 Homemade RaspiCam/Arduino-based digital microscope system capable of recording video and image capture (time-lapse microscopy) while robotically scanning a sample. The HomeScope as a whole package is not only a DIY biologist solution for developing robotic microscopy capabilities for the home laboratory but also a means to learn (and teach) subjects across disciplines.
 
-This open-source project is being developed collectively by biotexturas and collaborators.
+This open-source project was developed collectively by biotexturas and collaborators.
 {% endcapture %}
 
 {% capture summary %}
