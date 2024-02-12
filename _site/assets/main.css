@@ -6,7 +6,7 @@
 html, body {
   height: 100%;
   width: 100%;
-  min-width: 350px;
+  min-width: 360px;
 }
 
 /* Style the body */
@@ -92,11 +92,11 @@ ul, li {
 }
 
 .menu li a {
-  color: #cccccc; /* Black text color */
+  color: #cccccc; /* white text color */
   text-decoration: none; /* Remove underline from links */
 }
 
-.menu li a:hover {
+.menu li a.hover {
   transition: all 0.3s;
   color: #cccccc;
   background-color: #d24593;
@@ -104,7 +104,9 @@ ul, li {
 
 .menu li a.active {
   font-weight: bold;
+  background-color: #d24593;
 }
+
 #chinese_header {
   /* If overflow is not set to hidden, set max width of the header below so it
   doesn't generate an empty column to the right of the webpage. */
@@ -167,20 +169,30 @@ ul, li {
 @keyframes spin { 100% {transform:rotate(360deg);} }
 
 @media only screen and (min-width: 480px) {
+  #wrapper_back {
+    grid-template-rows: 100px auto 1fr;
+  }
+
   .menu {
-    top: 30px;
+    /* top: 30px; */
   }
 
   .menu li {
     /* Make the links appear below each other */
-    display: block;
+    /* display: block; */
   }
 
-  #wrapper_back {
-    grid-template-rows: 100px auto 1fr;
+  .menu li a.hover {
+    transition: all 0.3s;
+    color: #cccccc;
+    background-color: #d24593;
+  }
+  
+  .menu li a.active {
+    font-weight: bold;
+    background-color: transparent;
   }
 }
-
 
 @media only screen and (min-width: 900px) {
   #wrapper_front {
@@ -205,7 +217,7 @@ ul, li {
   }
 
   .menu {
-    /* top: 20px; */
+    top: 30px;
   }
 
   .menu li {
