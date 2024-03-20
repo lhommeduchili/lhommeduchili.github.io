@@ -4,23 +4,37 @@ title: projects
 permalink: /:basename/
 ---
 
-# Tracking _Paenibacillus vortex_ bacteria in time-lapse microscopy images @ [openFIESTA][5]{: .pretty_border}
+
+# The effect of coupling in spatial patterns of gene network dynamics  @ [IIBM][7]{: .pretty_border}
 
 {% capture details %}
-Several bacterial species can form complicated growth patterns on a wide variety of environmental conditions. Because the development of such complex structures requires self-organization and cooperative behavior of individual cells, the study of microbial pattern formation has been a basis for understanding intricate biological and social phenomena such as multicellularity.
+[previous work][8]{: .pretty_border} 
 
-_P. vortex_ generates swarming patterns with leading groups of cells containing tens to thousands of bacteria that cooperatively whirl around a common center. These vortices expand in size and move outward as a unit, leaving behind a trail -the vortex branch-. Although vortices are easy to identify, its dynamics are quite complicated and include attraction, repulsion, merging, and splitting; hence the task of tracking these moving structures imposes a challenge that is interdisciplinary at its core.
-
-This project aims to explore the use of [**optical flow**][6] to identify swarming structures in spatial time series data of microbial dynamics, which are then sequentially mapped to statistical models that can help us to develop some understanding of these bacteria's motility.
-
-[6]: https://en.wikipedia.org/wiki/Optical_flow "i.e. motion field between two image frames"
+[8]: https://doi.org/10.1186/s12915-023-01681-4 "Spatial biology of Ising-like synthetic genetic networks"
 {% endcapture %}
 
 {% capture summary %}
-<span style="color: #666666;">Optical Flow & Particle Filter.</span>
+<span style="color: #666666;"> Combining insights from statistical mechanics and leveraging tools from both microfabrication technology and synthetic biology </span>
 {% endcapture %}{% include details.html %}
 
-[5]: http://www.fiesta.tsinghua.edu.cn/ "Open Faculty for Innovation, Education, Science, Technology and Arts"
+[7]: https://federicilab.org/ "lab de tecnología libre"
+
+
+---
+# Light-induced phase separation of phototactic microalgae @ [LPENS][5]{: .pretty_border}
+
+{% capture details %}
+For more details please check out the resulting [research article][6]{: .pretty_border}.
+
+[6]: https://doi.org/10.48550/arXiv.2401.08394 "Collective photoprotection through light-induced phase separation in a phototactic micro-alga"
+{% endcapture %}
+
+{% capture summary %}
+<span style="color: #666666;"> Emergence of spatial patterns in dense suspensions _à la More is Different_ </span>
+{% endcapture %}{% include details.html %}
+
+[5]: https://www.lpens.ens.psl.eu/research/biophys/equipe-16/?lang=e "multiscale physics of living systems research group"
+
 
 ---
 # The Swarm @ [biotexturas][1]{: .pretty_border}
@@ -44,6 +58,7 @@ Our vision is deeply motivated by the idea of making science accessible for ever
 {% endcapture %}{% include details.html %}
 
 [1]: https://biotexturas.org "Collective of intelligent people, machines, and ecosystems"
+
 
 ---
 # [HomeScope][4]{: .pretty_border} <span>&#x1F52C;</span>
