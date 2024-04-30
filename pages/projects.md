@@ -12,14 +12,14 @@ At [lab de tecnología libre][7]{: .pretty_border} we are investigating how chem
 
 The research intends to provide insights into the principles of spatial self-organization in biological systems and its implications for biotechnological applications, highlighting the role of chemical coupling as a pivotal control parameter in the dynamics of spatial patterns of gene networks.
 
+[7]: https://federicilab.org/ "lab de tecnología libre"
+
 [8]: https://doi.org/10.1186/s12915-023-01681-4 "Spatial biology of Ising-like synthetic genetic networks"
 {% endcapture %}
 
 {% capture summary %}
 <span style="color: #666666;"> PhD project on the spatial biology of gene networks </span>
 {% endcapture %}{% include details.html %}
-
-[7]: https://federicilab.org/ "lab de tecnología libre"
 
 
 ---
