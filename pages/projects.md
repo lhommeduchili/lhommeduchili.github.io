@@ -8,18 +8,20 @@ permalink: /:basename/
 # The effect of coupling in spatial patterns of gene network dynamics  @ [IIBM][7]{: .pretty_border}
 
 {% capture details %}
-At [lab de tecnología libre][7]{: .pretty_border} we are investigating how chemical coupling between bistable genetic networks modulates the emergence of ordered, disordered, and scale-free patterns of gene expression in _E. coli_. The project leverages insights from statistical physics and employs synthetic biology alongside microfabrication technology to elucidate how coupling influences the formation of spatial patterns analogous to phenomena observed at critical points in continuous phase transitions. Utilizing time-lapse microscopy data of engineered coupled and bistable synthetic gene networks (CB-SGN) expressed in bacteria growing on microfabricated landscapes that allows manipulation of chemical coupling strength along with theoretical models that reproduce spatial patterns previously studied by our research group [(Simpson et al., 2023)][8]{: .pretty_border}, the project aims to (1) characterize CB-SGNs' spatial behavior, (2) examine the effect of chemical coupling strength, and (3) evaluate the presence of a continuous phase transition in the system. 
+At [lab de tecnología libre][8]{: .pretty_border} we are investigating how chemical coupling between bistable genetic networks modulates the emergence of ordered, disordered, and scale-free patterns of gene expression in _E. coli_. The project leverages insights from statistical physics and employs synthetic biology alongside microfabrication technology to elucidate how coupling influences the formation of spatial patterns analogous to phenomena observed at critical points in continuous phase transitions. Utilizing time-lapse microscopy data of engineered coupled and bistable synthetic gene networks (CB-SGN) expressed in bacteria growing on microfabricated landscapes that allows manipulation of chemical coupling strength along with theoretical models that reproduce spatial patterns previously studied by our research group [(Simpson et al., 2023)][9]{: .pretty_border}, the project aims to (1) characterize CB-SGNs' spatial behavior, (2) examine the effect of chemical coupling strength, and (3) evaluate the presence of a continuous phase transition in the system. 
 
 The research intends to provide insights into the principles of spatial self-organization in biological systems and its implications for biotechnological applications, highlighting the role of chemical coupling as a pivotal control parameter in the dynamics of spatial patterns of gene networks.
 
-[7]: https://federicilab.org/ "lab de tecnología libre"
+[8]: https://federicilab.org/ "lab de tecnología libre"
 
-[8]: https://doi.org/10.1186/s12915-023-01681-4 "Spatial biology of Ising-like synthetic genetic networks"
+[9]: https://doi.org/10.1186/s12915-023-01681-4 "Spatial biology of Ising-like synthetic genetic networks"
 {% endcapture %}
 
 {% capture summary %}
 <span style="color: #666666;"> PhD project on the spatial biology of gene networks </span>
 {% endcapture %}{% include details.html %}
+
+[7]: https://ingenieriabiologicaymedica.uc.cl/en/ "institute for biological and medical engineering"
 
 
 ---
