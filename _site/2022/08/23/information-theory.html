@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Begin Jekyll SEO tag v2.7.1 -->
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="blog" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Introduction" />
+<meta property="og:description" content="Introduction" />
+<link rel="canonical" href="http://localhost:4000/2022/08/23/information-theory.html" />
+<meta property="og:url" content="http://localhost:4000/2022/08/23/information-theory.html" />
+<meta property="og:site_name" content="L’Homme du Chili" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-08-23T00:00:00-04:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="blog" />
+<script type="application/ld+json">
+{"headline":"blog","dateModified":"2022-08-23T00:00:00-04:00","datePublished":"2022-08-23T00:00:00-04:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2022/08/23/information-theory.html"},"url":"http://localhost:4000/2022/08/23/information-theory.html","@type":"BlogPosting","description":"Introduction","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+<head>
+  <link rel="shortcut icon" href="/assets/favicon/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+  <link rel="alternate" type="application/rss+xml"  href="http://localhost:4000/feed.xml" title="L'Homme du Chili">
+  <title>L'Homme du Chili · blog </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1,
+                                 maximum-scale=1, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+  <meta name="HandheldFriendly" content="true">
+  
+  <!-- The following snippets (script) are used for integrating MathJax (LaTeX) -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+
+  <!--  Google font Roboto -->
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel="stylesheet">
+
+  <!--  Use external CSS stylesheet -->
+  <link rel="stylesheet" type="text/css" href=/assets/main.css>
+</head>
+
+  <body>
+    <div class="viewport-outline"></div>
+    <!-- Here starts the wrapper of the grid of fixed elements in the front -->
+    <div id="wrapper_front">
+      <div id="main_header">
+        <a href="/"> <h1>L'Homme du Chili</h1> </a>
+      </div>
+      <div class="menu">
+        <nav>
+  <ul>
+    
+      <li>
+        <a href="/" >
+          home
+        </a>
+      </li>
+    
+      <li>
+        <a href="/projects/" >
+          projects
+        </a>
+      </li>
+    
+      <li>
+        <a href="/about/" >
+          about
+        </a>
+      </li>
+    
+      <li>
+        <a href="/contact/" >
+          contact
+        </a>
+      </li>
+    
+  </ul>
+</nav>
+
+      </div>
+    </div>
+    <!-- Here starts the wrapper of the grid of static elements in the back -->
+    <div id="wrapper_back">
+      <div id="chinese_header">
+        <h2> 南波的 blog</h2>
+      </div>
+      <div id="main_content">
+        <div class="txt_container">
+  <h1 class="spacing" style="text-align: center">information theory snack</h1>
+  <div class="blog-post spacing">
+    <p class="summary" style="color: #666666; text-align: right;"><span class="date">2022年08月23日</span></p>
+    <h2 id="introduction">Introduction</h2>
+
+<p><em>“The fundamental problem of communication is that of reproducing at one point either exactly or approximately a message selected at another point.”</em></p>
+
+<div style="text-align: right;"><i>(Claude Shannon, 1948)</i></div>
+
+<p><br />
+<br /></p>
+
+<p><a href="https://people.math.harvard.edu/~ctm/home/text/others/shannon/entropy/entropy.pdf" title="landmark paper on information theory" class="pretty_border"><strong>A mathematical Theory of Communication</strong></a>, an article published in the middle of the last century by mathematician <a href="https://en.wikipedia.org/wiki/Claude_Shannon">Claude E. Shannon</a> while working at <a href="https://en.wikipedia.org/wiki/Bell_Labs">Bell Labs</a>, laid out the foundation of how modern society understands communication, that is, through the lens of <strong>Information Theory</strong>.</p>
+
+<p>The standard definition of information theory is disappointingly circular; it has to do with the scientific study of the transmission, processing, and storage of information through mathematics. One question that emerges naturally after facing this definition is <strong>what exactly is information?</strong> which is exactly the question I’m going to tackle in the following post.</p>
+
+<p><br /></p>
+<h2 id="information-as-a-measure-of-uncertainty">Information as a measure of uncertainty</h2>
+
+<p><em>“[…] the actual message is one selected from a set of possible messages. […] If the number of messages in the set is finite then this number or any monotonic function of this number can be regarded as a measure of the information produced when one message is chosen from the set […].”</em></p>
+
+<div style="text-align: right;"> <i>(Claude Shannon, 1948)</i></div>
+
+<p><br />
+<br /></p>
+
+<p>Let’s start with something simpler than <em>the fundamental communication problem</em> by asking ourselves <strong>how surprised would we be if a coin lands on tails after flipping it?</strong></p>
+
+<p>Shannon’s first contribution to the understanding of information was to settle how it should be quantified; intuitively, the more information we have about the outcome of a random event (e.g. tossing a fair coin), the less surprised we will be after that event indeed occurred (e.g. the coin lands on tails). This suggests that “the surprising factor” of the outcome of a random variable should be a <a href="https://en.wikipedia.org/wiki/Monotonic_function">monotonicly decreasing function</a> of its amount of information. Also, note that a maximally probable event (i.e. an event with probability 1) will yield no surprise at all!</p>
+
+<p>Meet <em>the logarithmic measure of information</em>, also known as self-information:</p>
+
+\[I(x) := -\log p(X = x)\]
+
+<p>where \(p(X = x)\) is the probability of the outcome \(x\). If the base of the logarithm function is \(2\). Self-information tells us the information content associated with an outcome of a random process.</p>
+
+<p><img src="/assets/images/self_information_plot.png" alt="Self-information of a randomm variable $$X$$" class="centered_img" width="90%;" /></p>
+
+<p>Now we know <strong>we would be just <em>a bit</em> surprised if a coin lands on tails</strong> (\(T\)) <strong>after flipping it</strong>, since the self-information of that outcome is \(1\) bit:</p>
+
+\[\begin{aligned}
+I(p(T)) &amp;= - \log_2 p(T)\\
+ &amp;= - \log_2 (0.5)\\
+&amp;= 1 \ \text{bit}
+\end{aligned}\]
+
+<p>Furthermore, we could ask whether we would be more surprised by winning the lottery (\(W\)) or by having a coin landing on heads (\(H\)), \(I(p(W)) \gt I(p(H))\). Assuming that the probability of winning the lottery is \(p(W) = 0.0000000715\) we can compute the self-information for this outcome:</p>
+
+\[\begin{aligned}
+I(p(W)) &amp;= - \log_2 p(W)\\
+ &amp;= - \log_2 (0.0000000715)\\
+&amp;\approx 24 \ \text{bit}
+\end{aligned}\]
+
+<p>Of course, <strong>we would be more than a bit surprised by winning the lottery!</strong> The surprise factor is equivalent to our uncertainty about the outcome of an event, it’s just a matter of occurrence. The bottom line is, that the more self-information we have over the outcome of a random variable, the more uncertain we are about it, and the more surprising will be that outcome.</p>
+
+<p>So far we have explored the information contained in the outcome of a random event (i.e. self-information), but as we will see in a moment, most of the time is more interesting to ask ourselves <strong>What event is more surprising on average?</strong> is it flipping a coin where both outcomes have the same probability?, or playing the lottery where one outcome is very unlikely while the other wouldn’t surprise us at all.</p>
+
+<p><br /></p>
+
+<h2 id="entropy">Entropy</h2>
+
+<p>The average “surprising factor” over all the possible outcomes of a random event (i.e. the expected value of self-information) is known as Information Entropy (\(H\)):</p>
+
+\[H(X) := - \sum_{x \in X} p(X = x) \log p(X = x)\]
+
+<p><img src="/assets/images/entropy_plot.png" alt="information entropy of a binary outcome distribution (i.e. Bernoulli distribution)" class="centered_img" width="90%;" /></p>
+
+<p>\(H(X)\) is all we need to answer our previous question; the entropy of flipping a fair coin is:</p>
+
+\[\begin{aligned}
+H_c &amp;= - (p(H) \log_2 p(H) + p(T) \log_2 p(T))\\
+&amp;= 1 \ \text{bit}
+\end{aligned}\]
+
+<p>while the entropy associated with playing the lottery is:</p>
+
+\[\begin{aligned}
+H_l &amp;= - (p(L) \log_2 p(L) + p(W) \log_2 p(W))\\
+&amp;\approx 0.0000018  \ \text{bit}
+\end{aligned}\]
+
+<p>As we can also infer from the figure above, <strong>on average, we gain much more information (and we’d be more surprised) with the outcomes of tossing a fair coin than the outcomes of playing the lottery.</strong></p>
+
+<p>Entropy tells us how spread out a probability distribution is. To illustrate this point, first consider a discrete uniform distribution with probability mass function:</p>
+
+\[u(x;a, b) = \frac{1}{b - a + 1}\]
+
+<p>where \(a, b\) are integers with \(b \geq a\). Let \(N = b - a + 1\), the support of the distribution, and compute the information entropy of the resulting distribution:</p>
+
+\[\begin{aligned}
+H(X) &amp;= - \sum_{x \in X} u(x) \log u(x)\\
+&amp;= - N \frac{1}{N} (\log 1 - \log N)\\
+&amp;= log N
+\end{aligned}\]
+
+<p>Secondly, consider the same probability distribution (i.e. Bernoulli’s) we have been implicitly using for calculating the probability of having a particular binary outcome of a random event:</p>
+
+\[b(k;p) =
+\begin{cases}
+p \ \text{if} \ k = 1\\
+1 - p \ \text{if} \ k = 0\\
+0 \ \text{otherwise.}
+\end{cases}\]
+
+<p>And compute its entropy as well:</p>
+
+\[\begin{aligned}
+H(K) &amp;= - \sum_{k \in K} b(k) \log b(k)\\
+&amp;= - (1-p) \log (1-p) - p \log p
+\end{aligned}\]
+
+<p>Note that \(H(X) \gt H(K)\), furthermore, it happens to be the case that the information entropy of a uniformly distributed random variable will be higher than the entropy of a random variable distributed otherwise.</p>
+
+<p><br />
+<br /></p>
+
+<h2 id="reference">Reference</h2>
+
+<p>YT channel <a href="https://www.youtube.com/@Computerphile">Computerfile</a>’s video on <a href="https://www.youtube.com/watch?v=b6VdGHSV6qg" class="pretty_border"><strong>Why Information Theory is Important</strong></a></p>
+
+
+  </div>
+</div>
+
+        
+          <div class="backhome_container">
+            <a href="/">[back to home]</a>
+          </div>
+        
+      </div>
+      <div id="footer">
+        <p class="poppetje">&#x1F331;</p>
+      </div>
+    </div>
+  </body>
+</html>

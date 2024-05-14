@@ -1,7 +1,7 @@
 ---
 layout: post
 title: blog # This is the title displayed next to 南波的博客
-post_title: Upgrading python version
+post_title: managing python version
 ---
 
 This how I currently keep myself updated in the ever growing world of Python.

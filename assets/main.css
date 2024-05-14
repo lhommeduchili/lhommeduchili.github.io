@@ -46,7 +46,7 @@ ul, li {
 }
 
 /* CSS grid areas for the front layer */
-#sinsciencia_header {grid-area: sc_hd;}
+#main_header {grid-area: sc_hd;}
 .menu {grid-area: mn;}
 
 /* CSS grid areas for the back layer */
@@ -74,7 +74,7 @@ ul, li {
 }
 
 /* Fixed header */
-#sinsciencia_header h1 {
+#main_header h1 {
   padding: 10px;
   font-size: 38px;
   color: #000;
@@ -83,7 +83,7 @@ ul, li {
   position: fixed;
   top: 30px;
   opacity: 0.90;
-  z-index: 996;
+  z-index: 998;
   width: 100%;
   text-align: left;
 }
@@ -156,6 +156,11 @@ ul, li {
   outline: 1px solid #d24593;
 }
 
+.centered_img {
+  margin: 0 auto;
+  display: block;
+}
+
 /* Correcting [back to home] margins */
 .backhome_container {
   padding-left: 10px;
@@ -222,7 +227,7 @@ ul, li {
   }
 
   /* Fixed rotated header */
-  #sinsciencia_header h1 {
+  #main_header h1 {
     font-size: 48px;
     left: -160px;
     top: 175px;

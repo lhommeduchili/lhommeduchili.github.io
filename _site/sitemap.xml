@@ -4,56 +4,56 @@
     
     <url>
         <loc>/about/</loc>
-        <lastmod>2024-03-20</lastmod>
+        <lastmod>2024-05-14</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     
     <url>
         <loc>/contact/</loc>
-        <lastmod>2024-03-20</lastmod>
+        <lastmod>2024-05-14</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     
     <url>
         <loc>/feed.xml</loc>
-        <lastmod>2024-03-20</lastmod>
+        <lastmod>2024-05-14</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     
     <url>
         <loc>/</loc>
-        <lastmod>2024-03-20</lastmod>
+        <lastmod>2024-05-14</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     
     <url>
         <loc>/projects/</loc>
-        <lastmod>2024-03-20</lastmod>
+        <lastmod>2024-05-14</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     
     <url>
         <loc>/sitemap.xml</loc>
-        <lastmod>2024-03-20</lastmod>
+        <lastmod>2024-05-14</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     
     <url>
         <loc>/assets/css/style.css</loc>
-        <lastmod>2024-03-20</lastmod>
+        <lastmod>2024-05-14</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     
     <url>
         <loc>/robots.txt</loc>
-        <lastmod>2024-03-20</lastmod>
+        <lastmod>2024-05-14</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
@@ -61,15 +61,22 @@
 
     
     <url>
+        <loc>/2022/08/23/information-theory.html</loc>
+        <lastmod>2024-05-14</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
         <loc>/2020/10/22/upgrading-python.html</loc>
-        <lastmod>2024-03-20</lastmod>
+        <lastmod>2024-05-14</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     
     <url>
         <loc>/2020/09/17/hello-world.html</loc>
-        <lastmod>2024-03-20</lastmod>
+        <lastmod>2024-05-14</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
