@@ -29,7 +29,7 @@ _"[...] the actual message is one selected from a set of possible messages. [...
 
 Let's start with something simpler than _the fundamental communication problem_ by asking ourselves **how surprised would we be if a coin lands on tails after flipping it?**
 
-Shannon's first contribution to the understanding of information was to settle how it should be quantified; intuitively, the more information we have about the outcome of a random event (e.g. tossing a fair coin), the less surprised we will be after that event indeed occurred (e.g. the coin lands on tails). This suggests that "the surprising factor" of the outcome of a random variable should be a [monotonicly decreasing function](https://en.wikipedia.org/wiki/Monotonic_function) of its amount of information. Also, note that a maximally probable event (i.e. an event with probability 1) will yield no surprise at all!
+Shannon's first contribution to the understanding of information was to settle how it should be quantified; intuitively, the more information we have about the outcome of a random event (e.g. tossing a fair coin), the less surprised we will be after that event indeed occurred (e.g. the coin lands on tails). This suggests that "the surprising factor" of the outcome of a random variable should be a [monotonicly decreasing function](https://en.wikipedia.org/wiki/Monotonic_function) of its amount of information. Also, note that a maximally probable event (i.e. an event with probability $$1$$) will yield no surprise at all!
 
 Meet _the logarithmic measure of information_, also known as self-information:
 
