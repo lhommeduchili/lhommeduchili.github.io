@@ -3,7 +3,7 @@ layout: about
 title: about
 permalink: /:basename/
 ---
-I’m a science and technology of open platforms enthusiast native of Chile, where I’m currently doing research contributing to the understanding of biological phenomena through an interdisciplinary approach mixing physics, ecology, and synthetic biology at [lab de tecnología libre][1]{: .pretty_border}.
+I’m a science and technology of open platforms enthusiast native of Chile, where I’m currently doing research contributing to the understanding of biological phenomena through an interdisciplinary approach mixing physics, synthetic biology and microfabrication technology at [lab de tecnología libre][1]{: .pretty_border}.
 
 On the educational front, I've been learning the ins and outs of the art of _workshopology_ through designing, producing, and distributing recreational-educational kits that combine STEM elements embedded in gaming experiences using scientific open-source hardware as biotic game consoles.
 
