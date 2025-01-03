@@ -8,7 +8,7 @@ permalink: /:basename/
 # The effect of coupling in spatial patterns of gene network dynamics  @ [IIBM][7]{: .pretty_border}
 
 {% capture details %}
-At [lab de tecnología libre][8]{: .pretty_border} we are investigating how chemical coupling between bistable genetic networks modulates the emergence of ordered, disordered, and scale-free patterns of gene expression in bacteria that resemble systems operating in the proximity of critical points of continuous phase transitions ([Simpson, K. et al][9]). The project leverages insights from statistical physics and employs synthetic biology alongside microfabrication technology for the study of phase transitions in gene networks. These approaches permit the dynamical study of coupled and bistable synthetic gene networks (CB-SGNs) from single-cells to microcolonies of _Escherichia coli_ at different chemical coupling strength conditions. This experimental setup allows us to study the dynamics of CB-SGNs’ induced pattern formation under precisely controlled and steady growth conditions at a single-cell resolution, as opposed to observing metabolically-drained bacterial colonies growing on a surface of solid agar. The main objectives of this work are (1) to characterize the spatial behavior of CB-SGNs, (2) to examine the effect of chemical coupling strength , and (3) to evaluate the existence of a continuous phase transition in the system.
+At [lab de tecnología libre][8]{: .pretty_border} we are investigating how chemical coupling between bistable genetic networks modulates the emergence of ordered, disordered, and scale-free patterns of gene expression in bacteria that resemble systems operating in the proximity of critical points of continuous phase transitions ([Simpson, K. et al][9]). The project leverages insights from statistical physics and employs synthetic biology alongside microfabrication technology for the study of phase transitions in gene networks. These approaches permit the dynamical study of coupled and bistable synthetic gene networks (CB-SGNs) from single-cells to microcolonies of _Escherichia coli_ at different chemical coupling strength conditions. This experimental setup allows us to study the dynamics of CB-SGNs’ induced pattern formation under precisely controlled and steady growth conditions at a single-cell resolution, as opposed to observing metabolically-drained bacterial colonies growing on a surface of solid agar. The main objectives of this work are (1) to characterize the spatial behavior of CB-SGNs, (2) to examine the effect of chemical coupling strength, and (3) to evaluate the existence of a continuous phase transition in the system.
 
 The research intends to provide insights into the principles of spatial self-organization in biological systems and its implications for biotechnological applications, highlighting the role of chemical coupling as a pivotal control parameter in the dynamics of spatial patterns of gene networks.
 
@@ -34,7 +34,7 @@ For more details please check out the resulting [research article][6]{: .pretty_
 {% endcapture %}
 
 {% capture summary %}
-<span style="color: #666666;"> Emergence of spatial patterns in dense suspensions _à la More is Different_ </span>
+<span style="color: #666666;"> Emergence of spatial patterns in dense suspensions of _Chlamydomonas Reinhardtii_ </span>
 {% endcapture %}{% include details.html %}
 
 [5]: https://www.lpens.ens.psl.eu/research/biophys/equipe-16/?lang=e "multiscale physics of living systems research group"
